@@ -1,26 +1,13 @@
+import './index.scss';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import TestComponent from '@frx/components/build/TestComponent';
+import Figure from '@frx/components/dist/components/Figure';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <TestComponent theme="primary" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Figure alt="image" src="https://picsum.photos/200" isRound size="is-128x128">
+        Caption Text
+        </Figure>
     </div>
   );
 }

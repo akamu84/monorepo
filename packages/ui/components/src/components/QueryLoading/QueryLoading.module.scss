@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+@import '../../styles/typography.scss';
+
+$default-color: var(--color-grey-80);
+$inverted-color: var(--color-grey-10);
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.loadingSpinner {
+  animation: rotation 0.4s infinite linear;
+  -webkit-animation: rotation 0.4s infinite linear;
+  border: 3px solid rgba(51, 51, 51, 0.25);
+  border-top: 3px solid $default-color;
+  border-radius: 50%;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  width: 2rem;
+}
+
+.loadingLabel {
+  color: $default-color;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.inverted {
+  .loadingSpinner {
+    border: 3px solid rgba(230, 230, 230, 0.25);
+    border-top: 3px solid $inverted-color;
+  }
+
+  .loadingLabel {
+    color: $inverted-color;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

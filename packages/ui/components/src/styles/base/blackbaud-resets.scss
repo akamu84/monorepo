@@ -1,0 +1,33 @@
+/*
+ * These styles are intended to override the Blackbaud defaults
+ * which are injected in all Teamraiser applications
+ */
+
+a {
+  &:link {
+    color: $link-blue;
+  }
+
+  &:hover {
+    color: $link-hover;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $link-active;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $link-focus;
+    text-decoration: none;
+  }
+}
+
+label {
+  white-space: normal;
+}
+
+legend {
+  float: none;
+}

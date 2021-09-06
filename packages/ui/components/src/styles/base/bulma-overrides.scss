@@ -1,0 +1,97 @@
+// Sizings
+$size-1: 2.25rem;
+$size-2: 1.875rem;
+$size-3: 1.5rem;
+$size-4: 1.25rem;
+$size-5: 1rem;
+$size-6: 0.85rem;
+$size-7: 0.75rem;
+
+// Fonts
+$family-sans-serif: 'SJ Sans', 'Open Sans', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+  sans-serif;
+$size-small: $size-6;
+$size-normal: $size-5;
+$size-medium: $size-4;
+$size-large: $size-2;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 600;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Greyscale
+$black: #000;
+$black-bis: $grey-90;
+$black-ter: #272727;
+$grey-darker: $grey-80;
+$grey-dark: $grey-70;
+$grey: $grey-50;
+$grey-light: $grey-30;
+$grey-lighter: $grey-20;
+$grey-lightest: $grey-10;
+$white-ter: $grey-5;
+$white-bis: #fafafa;
+$white: #fff;
+
+// Colors
+$primary: $swatch-1;
+$info: $swatch-3;
+$success: $success-green;
+$warning: $yellow;
+$danger: $error-red;
+$light: $white-ter;
+$dark: $grey-5;
+$link: $swatch-4;
+$link-hover: $swatch-1;
+$link-focus: $swatch-1;
+$link-active: $swatch-1;
+$text: $black-bis;
+$text-invert: findColorInvert($text);
+$text-strong: $grey-darker;
+
+// Other
+$radius: 3px;
+$background: $white;
+
+// Boxes
+$box-radius: $radius-large;
+$box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07), 0 2px 1px -1px rgba(0, 0, 0, 0.06),
+  0 1px 3px 0 rgba(0, 0, 0, 0.1); // $dp2 by default
+
+// Forms
+$label-color: $grey-dark;
+$label-weight: $weight-normal;
+
+// Tabs
+$tabs-border-bottom-width: 2px;
+$tabs-link-color: $grey-40;
+$tabs-border-bottom-color: $grey-lightest;
+$tabs-link-hover-color: $grey-darker;
+$tabs-link-hover-border-bottom-color: $grey-light;
+
+// Buttons
+$button-padding-horizontal: 2rem;
+$button-padding-vertical: 0.65rem;
+$button-family: $family-sans-serif;
+
+// Titles
+$title-weight: $weight-normal;
+$title-strong-weight: $weight-medium;
+$subtitle-negative-margin: -0.5rem;
+
+// Navbar
+$navbar-breakpoint: $tablet;
+$navbar-box-shadow-color: $grey-lightest;
+$navbar-box-shadow-size: 0 1px 2px 0;
+$navbar-padding-horizontal: 1rem;
+$navbar-padding-vertical: 0.5rem;
+$navbar-item-color: $link;
+$navbar-item-hover-color: $swatch-1;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $swatch-1;
+$navbar-dropdown-arrow: $grey-light;
+
+// Footer
+$footer-background-color: $grey-darker;

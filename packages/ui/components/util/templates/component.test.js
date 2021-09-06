@@ -1,24 +1,26 @@
 module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
-import React from "react";
-import { render } from "@testing-library/react";
-import ${componentName} from "./${componentName}";
-import { ${componentName}Props } from "./${componentName}.types";
-describe("Test Component", () => {
-  let props: ${componentName}Props;
+  content: `import React from 'react';
+import { render } from '@testing-library/react';
+import ${componentName} from './${componentName}';
+import { I${componentName}Props } from './${componentName}.types';
+
+describe('${componentName}', () => {
+  let props: I${componentName}Props;
   beforeEach(() => {
     props = {
-      foo: "bar"
+      foo: 'bar',
     };
   });
+
   const renderComponent = () => render(<${componentName} {...props} />);
-  it("should render foo text correctly", () => {
-    props.foo = "harvey was here";
+
+  it('should render text correctly', () => {
+    props.foo = 'test text';
     const { getByTestId } = renderComponent();
-    const component = getByTestId("${componentName}");
-    expect(component).toHaveTextContent("harvey was here");
+    const component = getByTestId('${componentName}');
+    expect(component).toHaveTextContent('test text');
   });
 });
 `,
-  extension: `.test.tsx`
+  extension: `.test.tsx`,
 });

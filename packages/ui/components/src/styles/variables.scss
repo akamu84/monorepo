@@ -1,0 +1,122 @@
+// Base font sizes
+$base-font-size-mobile: 14px;
+$base-font-size-desktop: 16px;
+$base-font-size-large: 18px;
+
+// Responsive
+$mobile-small: 426px;
+
+// Forms
+$fieldset-spacing: 1.25rem;
+
+// SVGs
+$svg-file-path: '../../../assets/icons';
+$svg-icon-base-size: 14;
+
+$tabs-arrow-size: 8px;
+
+// Monochromatic
+$grey-5: #f5f5f5;
+$grey-10: #e6e6e6;
+$grey-20: #ccc;
+$grey-30: #b3b3b3;
+$grey-40: #999;
+$grey-50: #808080;
+$grey-60: #666;
+$grey-70: #4d4d4d;
+$grey-80: #333;
+$grey-90: #1a1a1a;
+
+// Primary
+$swatch-1: #d11947;
+$swatch-2: #8d0034;
+$light-grey: #dfe1df;
+$medium-grey: #c7c9c8;
+$dark-grey: #474c55;
+
+// Secondary
+$swatch-3: #712d91;
+$swatch-4: #1874dc;
+$swatch-5: #7ad0e4;
+$swatch-6: #c4d82e;
+$swatch-7: #ffc32c;
+$swatch-8: #4b2884;
+$swatch-9: #00437b;
+$swatch-10: #17818f;
+$swatch-11: #62bb46;
+$swatch-12: #fdb71a;
+
+// Program
+$stem-primary: #75bc21;
+$sjmmw-primary: $swatch-1;
+
+// Additional
+$charcoal: #2a2e30;
+$error-red: #e03400;
+$success-green: #008a1c;
+$link-blue: #135cb0;
+
+// Brand
+$facebook: #324d8f;
+$twitter: #00a1ed;
+$google: #db402c;
+$youtube: #b50000;
+$linkedin: #0077b5;
+
+:root {
+  /** Monochromatic */
+  --color-grey-5: #f5f5f5;
+  --color-grey-10: #e6e6e6;
+  --color-grey-20: #ccc;
+  --color-grey-30: #b3b3b3;
+  --color-grey-40: #999;
+  --color-grey-50: #808080;
+  --color-grey-60: #666;
+  --color-grey-70: #4d4d4d;
+  --color-grey-80: #333;
+  --color-grey-90: #1a1a1a;
+
+  /** Primary */
+  --color-swatch-1: #d11947;
+  --color-swatch-2: #8d0034;
+  --color-light-grey: #dfe1df;
+  --color-medium-grey: #c7c9c8;
+  --color-dark-grey: #474c55;
+
+  /** Secondary */
+  --color-swatch-3: #712d91;
+  --color-swatch-4: #1874dc;
+  --color-swatch-5: #7ad0e4;
+  --color-swatch-6: #c4d82e;
+  --color-swatch-7: #ffc32c;
+  --color-swatch-8: #4b2884;
+  --color-swatch-9: #00437b;
+  --color-swatch-10: #17818f;
+  --color-swatch-11: #62bb46;
+  --color-swatch-12: #fdb71a;
+
+  /** Additional */
+  --color-charcoal: #2a2e30;
+  --color-error-red: #e03400;
+  --color-success-green: #008a1c;
+  --color-link-blue: #135cb0;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /** Brand */
+  --color-facebook: #324d8f;
+  --color-twitter: #00a1ed;
+  --color-google: #db402c;
+  --color-youtube: #b50000;
+  --color-linkedin: #0077b5;
+
+  --color-error: #e03400;
+
+  /** Breakpoint **/
+  --breakpoint-mobile-small: 426px;
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 769px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-widescreen: 1216px;
+  --breakpoint-fullhd: 1408px;
+}

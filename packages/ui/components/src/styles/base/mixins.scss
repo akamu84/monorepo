@@ -1,0 +1,48 @@
+// Font mixins
+@mixin font-regular {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-light {
+  font-weight: 300;
+}
+@mixin font-semibold {
+  font-weight: 600;
+}
+@mixin font-bold {
+  font-weight: 700;
+}
+@mixin font-italic {
+  font-style: italic;
+}
+
+@mixin font-attrs($weight: normal, $style: normal) {
+  @if $weight == light {
+    @include font-light;
+  } @else if $weight == semibold {
+    @include font-semibold;
+  } @else if $weight == bold {
+    @include font-bold;
+  } @else {
+    font-weight: $weight;
+  }
+  font-style: $style;
+}
+
+// Smaller mobile breakpoint
+@mixin mobile-small {
+  @media screen and (max-width: $mobile-small - 1) {
+    @content;
+  }
+}
+
+@mixin icon($color, $name) {
+  background-image: svg-icon($icon-name: $name, $color: $color);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: inherit;
+  width: inherit;
+}

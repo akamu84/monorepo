@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+// Import the initial variables and functions for Bulma
+@import '~bulma/sass/utilities/_all';
+
+// Import all the settings files
+@import './typography';
+@import './variables';
+@import './base/mixins';
+@import './base/bulma-overrides';
+@import './base/blackbaud-resets';
+
+// Import the rest of Bulma
+@import '~bulma/bulma';
